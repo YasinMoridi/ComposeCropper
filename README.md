@@ -43,7 +43,7 @@ dependencyResolutionManagement {
 Add the dependency to your `build.gradle.kts`:
 ```kotlin
 dependencies {
-    implementation("com.github.yasinmoridi:ComposeCropper:1.0.0")
+    implementation("com.github.YasinMoridi:ComposeCropper:1.0.0")
 }
 ```
 
