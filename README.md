@@ -28,11 +28,22 @@ ComposeCropper is a production-ready Android library built from the ground up us
 ## 🚀 Quick Start
 
 ### 1. Installation
-Add the dependency to your `build.gradle.kts`:
 
+Add JitPack to your `settings.gradle.kts`:
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Add the dependency to your `build.gradle.kts`:
 ```kotlin
 dependencies {
-    implementation("com.yasinmoridi:composecropper:1.0.0")
+    implementation("com.github.yasinmoridi:ComposeCropper:1.0.0")
 }
 ```
 
