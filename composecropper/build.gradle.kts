@@ -2,8 +2,13 @@ import org.gradle.api.publish.maven.MavenPublication
 
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("maven-publish")
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 android {
